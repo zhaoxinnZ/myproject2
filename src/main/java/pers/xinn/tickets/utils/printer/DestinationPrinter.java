@@ -1,12 +1,12 @@
-package main.java.pers.xinn.Ticket_Tweaking;
+package main.java.pers.xinn.tickets.utils.printer;
 
-import main.java.pers.xinn.destination.Destination;
+import main.java.pers.xinn.tickets.types.Destination;
 
 import java.util.ArrayList;
-import java.util.Scanner;
 
-public interface DestinationUtils {
-    public static void Print(ArrayList<Destination> Destination) {
+public interface DestinationPrinter {
+
+    public static void printLocation(ArrayList<Destination> Destination) {
         int i = 1;
         System.out.println("===============");
         for (Destination dest : Destination) {

@@ -1,9 +1,9 @@
 package main.java.pers.xinn.score;
 
 public class Student {
-    String name;
-    int english;
-    int math;
+    final String name;
+    final int english;
+    final int math;
     public Student(String name, int english, int math) {
         this.name = name;
         this.english = english;

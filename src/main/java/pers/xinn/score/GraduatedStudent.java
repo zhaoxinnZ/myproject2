@@ -1,7 +1,7 @@
 package main.java.pers.xinn.score;
 
 public class GraduatedStudent extends Student{
-    int thesis;
+    final int thesis;
 
 
     public GraduatedStudent(String name, int english, int math, int thesis) {

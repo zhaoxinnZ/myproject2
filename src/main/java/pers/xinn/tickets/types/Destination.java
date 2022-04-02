@@ -1,4 +1,4 @@
-package main.java.pers.xinn.destination;
+package main.java.pers.xinn.tickets.types;
 import java.lang.Math;
 
 public enum Destination {
@@ -29,4 +29,6 @@ public enum Destination {
     public static int getRelative_position(Destination destination1, Destination destination2){
         return Math.abs(destination1.getAbsolute_position() - destination2.getAbsolute_position());
     }
+
+
 }
