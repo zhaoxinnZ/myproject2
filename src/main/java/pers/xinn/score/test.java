@@ -1,5 +1,8 @@
 package main.java.pers.xinn.score;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class test {
 
 
@@ -12,5 +15,6 @@ public class test {
         System.out.println(student);
         System.out.println(student1);
         System.out.println(student2);
+
     }
 }

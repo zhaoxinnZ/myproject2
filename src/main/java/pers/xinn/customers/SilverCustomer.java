@@ -10,4 +10,9 @@ public class SilverCustomer extends Customer{
         return (int) (amount - (amount * discount));
     }
 
+    @Override
+    public void print() {
+        System.out.println("Silver Customer");
+    }
+
 }

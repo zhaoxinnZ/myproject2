@@ -1,6 +1,6 @@
 package main.java.pers.xinn.customers;
 
-public abstract class Customer {
+public abstract class Customer implements Printable{
     String id;
     int amount;
     float discount;

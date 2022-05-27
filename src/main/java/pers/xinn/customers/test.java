@@ -1,5 +1,7 @@
 package main.java.pers.xinn.customers;
 
+import java.util.LinkedList;
+
 public class test {
 
 
@@ -12,5 +14,10 @@ public class test {
 
         Customer customer2 = new GoldenCustomer("789", 300);
         System.out.println(customer2);
+
+        customer.print();
+        customer1.print();
+        customer2.print();
+
     }
 }

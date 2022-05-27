@@ -5,4 +5,10 @@ public class NormalCustomer extends Customer{
         super(id, amount);
         super.discount = 0.1f;
     }
+
+    @Override
+    public void print() {
+        System.out.println("Normal Customer");
+    }
+
 }
