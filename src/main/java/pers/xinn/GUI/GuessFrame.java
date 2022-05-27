@@ -4,6 +4,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.Random;
 
 public class GuessFrame extends JFrame {
 
@@ -21,12 +22,22 @@ public class GuessFrame extends JFrame {
         add(label);
         add(button);
         setVisible(true);
+        Random random = new Random();
+        int secret = random.nextInt(10);
 
         button.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
                 int num = Integer.parseInt(jTextField.getText());
                 System.out.println(num);
+
+                if (num > secret){
+                    label.setText("Smaller");
+                }else if (num < secret){
+                    label.setText("Bigger");
+                }else {
+                    label.setText("Bingo");
+                }
             }
         });
 
