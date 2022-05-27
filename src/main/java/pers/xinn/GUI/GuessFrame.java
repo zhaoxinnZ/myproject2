@@ -12,18 +12,21 @@ public class GuessFrame extends JFrame {
         setSize(600, 400);
         setLocation(300,200);
         setDefaultCloseOperation(DISPOSE_ON_CLOSE);
-        setVisible(true);
-        JButton button = new JButton("hi");
+        JButton button = new JButton("ok");
         JLabel label = new JLabel("test");
+        JTextField jTextField = new JTextField(10);
 
         setLayout(new FlowLayout());
+        add(jTextField);
         add(label);
         add(button);
+        setVisible(true);
+
         button.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
-                System.out.println("hello!");
-                label.setText("hello");
+                int num = Integer.parseInt(jTextField.getText());
+                System.out.println(num);
             }
         });
 
